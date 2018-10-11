@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EmailInterfaces
 {
-    public class IEmailService
+    public interface IEmailService
     {
         List<EmailFolder> MailFolders { get; }
         void SendMail(Email email);

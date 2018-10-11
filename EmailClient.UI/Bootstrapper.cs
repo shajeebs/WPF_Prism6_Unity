@@ -1,9 +1,7 @@
-﻿using Prism.Unity;
-using Microsoft.Practices.Unity;
-using System.Windows;
+﻿using Microsoft.Practices.Unity;
 using Prism.Modularity;
-using Prism.Modularity.Module;
-using System;
+using Prism.Unity;
+using System.Windows;
 
 namespace EmailClient.UI
 {
@@ -22,7 +20,10 @@ namespace EmailClient.UI
 
         protected override IModuleCatalog CreateModuleCatalog()
         {
-            return ModuleCatalog.CreateFromXaml(new Uri("catalog.xaml", UriKind.Relative)));
+            return new DirectoryModuleCatalog()
+            {
+                ModulePath = @".\Modules"
+            };
         }
     }
 }

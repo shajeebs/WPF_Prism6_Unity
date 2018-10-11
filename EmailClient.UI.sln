@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.UI", "EmailClient.UI\EmailClient.UI.csproj", "{C29C7289-D238-4C3E-A95D-58C5A54D03AC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailEntities", "EmailEntities\EmailEntities.csproj", "{307334B5-BD35-49F3-BD09-4C205ABE8C2F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailInterfaces", "EmailInterfaces\EmailInterfaces.csproj", "{C4478C17-A96D-4EC4-A241-4BB90868C55A}"
@@ -24,16 +22,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailSelectionUI", "MailSelectionUI\MailSelectionUI.csproj", "{3BE7E45B-1B96-422F-9DDA-AF8A27264E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailClient.UI", "EmailClient.UI\EmailClient.UI.csproj", "{C29C7289-D238-4C3E-A95D-58C5A54D03AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{307334B5-BD35-49F3-BD09-4C205ABE8C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{307334B5-BD35-49F3-BD09-4C205ABE8C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{307334B5-BD35-49F3-BD09-4C205ABE8C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -46,15 +44,24 @@ Global
 		{15E7104D-CA5B-492C-903C-0219ACFB79D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15E7104D-CA5B-492C-903C-0219ACFB79D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15E7104D-CA5B-492C-903C-0219ACFB79D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE7E45B-1B96-422F-9DDA-AF8A27264E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE7E45B-1B96-422F-9DDA-AF8A27264E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE7E45B-1B96-422F-9DDA-AF8A27264E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE7E45B-1B96-422F-9DDA-AF8A27264E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29C7289-D238-4C3E-A95D-58C5A54D03AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C29C7289-D238-4C3E-A95D-58C5A54D03AC} = {83962D1E-A118-4C40-9ACF-5D01A1CA3768}
 		{307334B5-BD35-49F3-BD09-4C205ABE8C2F} = {6E5F553B-44F9-4E59-9B7D-5F968E1E49BE}
 		{C4478C17-A96D-4EC4-A241-4BB90868C55A} = {6E5F553B-44F9-4E59-9B7D-5F968E1E49BE}
-		{15E7104D-CA5B-492C-903C-0219ACFB79D1} = {6E5F553B-44F9-4E59-9B7D-5F968E1E49BE}
+		{15E7104D-CA5B-492C-903C-0219ACFB79D1} = {DC7347CE-7E15-4A64-8397-9C1D9091C92A}
+		{3BE7E45B-1B96-422F-9DDA-AF8A27264E24} = {DC7347CE-7E15-4A64-8397-9C1D9091C92A}
+		{C29C7289-D238-4C3E-A95D-58C5A54D03AC} = {83962D1E-A118-4C40-9ACF-5D01A1CA3768}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C916DC0-015D-4568-81ED-226EE3906A4C}

@@ -67,7 +67,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
@@ -117,13 +116,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="catalog.xaml">
-      <SubType>Designer</SubType>
-    </Content>
     <Page Include="Shell.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmailServices\EmailServices.csproj">
+      <Project>{15e7104d-ca5b-492c-903c-0219acfb79d1}</Project>
+      <Name>EmailServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MailSelectionUI\MailSelectionUI.csproj">
+      <Project>{3be7e45b-1b96-422f-9dda-af8a27264e24}</Project>
+      <Name>MailSelectionUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

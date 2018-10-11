@@ -30,14 +30,16 @@ namespace EmailEntities
             this._folder.AddMail(this);
         }
         public static Email Create() {
-            return new Email()
+            var email = new Email()
             {
                 From = "",
                 To = "",
                 Sent = DateTime.Now,
-                Subject = string.Format("Email {0} Subject line", this.Id),
-                Body = string.Format("Email {0} Body Text", this.Id),
             };
+
+            email.Subject = string.Format("Email {0} Subject line", email.Id);
+            email.Body = string.Format("Email {0} Body Text", email.Id);
+            return email;
         }
     }
 }

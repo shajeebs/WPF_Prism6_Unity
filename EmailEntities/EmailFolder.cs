@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
 namespace EmailEntities
 {
     public class EmailFolder
     {
+        private List<Email> emails;
+
         public event EventHandler<EmailFolderChangeEventArgs> EmailChanged;
         public EmailFolder()
             : this(new List<Email>())
@@ -42,7 +41,7 @@ namespace EmailEntities
         {
             lock (emails)
             {
-                Emails.Add(email);
+                emails.Add(email);
             }
             FireEmailChanged(EmailFolderChangeType.Added, email);
         }
@@ -50,7 +49,7 @@ namespace EmailEntities
         {
             lock (emails)
             {
-                Emails.Remove(email);
+                emails.Remove(email);
             }
             FireEmailChanged(EmailFolderChangeType.Deleted, email);
         }
