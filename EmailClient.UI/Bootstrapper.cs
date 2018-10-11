@@ -1,5 +1,9 @@
 ﻿using Prism.Unity;
+using Microsoft.Practices.Unity;
 using System.Windows;
+using Prism.Modularity;
+using Prism.Modularity.Module;
+using System;
 
 namespace EmailClient.UI
 {
@@ -7,12 +11,18 @@ namespace EmailClient.UI
     {
         protected override DependencyObject CreateShell()
         {
-            return base.CreateShell();
+            return Container.Resolve<Shell>();
         }
 
         protected override void InitializeShell()
         {
-            base.InitializeShell();
+            Application.Current.MainWindow.Show();
+
+        }
+
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            return ModuleCatalog.CreateFromXaml(new Uri("catalog.xaml", UriKind.Relative)));
         }
     }
 }

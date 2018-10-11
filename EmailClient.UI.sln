@@ -11,6 +11,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailInterfaces", "EmailInt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServices", "EmailServices\EmailServices.csproj", "{15E7104D-CA5B-492C-903C-0219ACFB79D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{83962D1E-A118-4C40-9ACF-5D01A1CA3768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6E5F553B-44F9-4E59-9B7D-5F968E1E49BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{DC7347CE-7E15-4A64-8397-9C1D9091C92A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD7C5540-786A-4288-B07A-0B9DA62C6A6E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +49,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C29C7289-D238-4C3E-A95D-58C5A54D03AC} = {83962D1E-A118-4C40-9ACF-5D01A1CA3768}
+		{307334B5-BD35-49F3-BD09-4C205ABE8C2F} = {6E5F553B-44F9-4E59-9B7D-5F968E1E49BE}
+		{C4478C17-A96D-4EC4-A241-4BB90868C55A} = {6E5F553B-44F9-4E59-9B7D-5F968E1E49BE}
+		{15E7104D-CA5B-492C-903C-0219ACFB79D1} = {6E5F553B-44F9-4E59-9B7D-5F968E1E49BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C916DC0-015D-4568-81ED-226EE3906A4C}

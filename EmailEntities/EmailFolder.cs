@@ -7,7 +7,7 @@ namespace EmailEntities
 {
     public class EmailFolder
     {
-        public event EventHandler<EmailForlderChangeEventArgs> EmailChanged;
+        public event EventHandler<EmailFolderChangeEventArgs> EmailChanged;
         public EmailFolder()
             : this(new List<Email>())
         {
@@ -44,7 +44,7 @@ namespace EmailEntities
             {
                 Emails.Add(email);
             }
-            FireEmailChanged(EmailForlderChangeType.Added, email);
+            FireEmailChanged(EmailFolderChangeType.Added, email);
         }
         internal void DeleteMail(Email email)
         {
@@ -52,8 +52,18 @@ namespace EmailEntities
             {
                 Emails.Remove(email);
             }
-            FireEmailChanged(EmailForlderChangeType.Deleted, email);
+            FireEmailChanged(EmailFolderChangeType.Deleted, email);
         }
-       // internal void FireEmailChanged
+       internal void FireEmailChanged(EmailFolderChangeType changeType, Email email)
+        {
+            if(EmailChanged != null)
+            {
+                EmailChanged(this, new EmailFolderChangeEventArgs()
+                {
+                    ChangeType = changeType,
+                    Email = email
+                });
+            }
+        }
     }
 }
